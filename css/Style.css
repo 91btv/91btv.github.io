@@ -321,7 +321,7 @@ aside {
     margin-left: 19px;
 }
 .row {
-    padding-top: 30%;
+    padding-top: 25%;
 }
 
 
@@ -376,6 +376,10 @@ aside {
 	#root {
 		display: compact;
 	}
+.row {
+    padding-top: 10%;
+}
+
 }
 
 
