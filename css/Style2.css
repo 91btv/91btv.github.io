@@ -44,54 +44,19 @@ body h1 {
     margin-top: 83px;
 }
 .img-fluid {
-    width: 45%;
-    margin-right: 29%;
-    margin-left: 29%;
+    width: 39%;
+    margin-right: 46%;
+    margin-left: 46%;
 
 }
 #root div .playlist {
     margin-left: 35%;
     margin-right: 35%;
-    padding-left: 0px;
 }
-
 #root div {
     margin-left: 10%;
     margin-right: 10%;
 }
-aside #root div .playlist {
-    margin-left: -25%;
-}
-
-body aside h3 {
-    color: #FFFFFF;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-#root div #iframe_yt1 {
-    margin-left: -46px;
-    width: 175%;
-    height: 80%;
-    min-width: 200px;
-}
-
-aside div .center_arrow img {
-    margin-left: 25%;
-}
-.shows .e {
-
-
-
-
-
-}
-
-
-
-
-
-
 
 
 
@@ -101,14 +66,6 @@ aside div .center_arrow img {
 body {
     margin-top: 50px;
 }
-
-#root div .playlist {
-}
-.shows .text-right {
-    margin-top: -52px;
-}
-
-
   .navbar{
     position: fixed;
     right: 0;
@@ -239,11 +196,17 @@ aside {
     margin-left: auto;
     margin-right: 10%;
 }
-
 #root div .playlist {
     margin-left: 35%;
     margin-right: 35%;
 }
+
+
+
+
+
+
+
 
 
 }
@@ -272,7 +235,6 @@ aside {
     margin-right: 10%;
     margin-top: 0px;
 }
-
 
 }
 
@@ -308,16 +270,20 @@ aside {
     float: none;
     margin-top: 5px;
 }
+section {
+    width: 90%;
+    margin-left: 19px;
+}
 #root div .playlist {
     margin-left: 20%;
     margin-right: 20%;
 }
-.shows  {
-    width: 90%;
-    margin-left: 19px;
-}
 
 
+
+
+
+	
 }
 @media (min-width: 640px) and (max-width: 768px) {
 	.money {
@@ -333,7 +299,7 @@ aside {
     min-width: 250px;
     float: right;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 100%;
     margin-top: 0px;
 }
 aside {
@@ -350,26 +316,17 @@ aside {
     margin-top: 5px;
     float: left;
 }
-
 #root div .playlist {
     margin-left: 32.5%;
     margin-right: 32.5%;
 }
-	
+
+
+
 }
-
-
-
 #root {
-    display: flex;
+    display: compact;
 }
-
-@media (max-width: 922px)  {
-	#root {
-		display: compact;
-	}
-}
-
 
 
 
@@ -392,7 +349,7 @@ aside {
   transition: all 0.3s;
 }
 .row {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .center_arrow{
@@ -400,8 +357,7 @@ aside {
     text-align: center;
 }
 #iframe_yt{
-    margin-top: 29px;
-    margin-left: -6%;
+  margin-top: 29px;
 }
 img:hover, .playlist-item:hover {
   cursor: pointer;

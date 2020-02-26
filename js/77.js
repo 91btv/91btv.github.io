@@ -2,13 +2,12 @@
 const API_KEY = 'AIzaSyAk3wBmQCHaBANg1TNIv1tgFn41uM4MpP8';
 const API_ID = '158727218646-ddau54es4kl6r76r24sc16ttfhgoi98t.apps.googleusercontent.com';
 const PLAYLIST_ID = 'UUnpSZboK4AIfI7RmV6O6vwQ';
+
 var videoVisible = 0;
 var maxVideoVisible = 50;
 
 const playlistItems = [];
-const playlist = document.getElementsByID("playlist")[0];
-
-
+const playlist = document.getElementsByClassName("playlist")[0];
 
 // From Google API Docs
 function initAPIClient() {
@@ -35,7 +34,6 @@ function getPlaylistItems(pageToken) {
       "part": "snippet,contentDetails",
       "maxResults": 50, // This is the maximum available value, according to the google docs
       "playlistId": PLAYLIST_ID,
-		
       pageToken
     })
       .then(function(response) {
@@ -75,8 +73,7 @@ function createPlaylistItem(i, index) {
   item.id = index.toString();
   item.addEventListener("click", function(){ 
    // document.getElementById('iframe_yt').src = "https://www.youtube.com/embed?listType=playlist&list=UUnpSZboK4AIfI7RmV6O6vwQ&autoplay=1&index=" + changeIndex.toString();
-	 window.open("https://www.youtube.com/watch?list=UUnpSZboK4AIfI7RmV6O6vwQ&v=" + i.snippet.resourceId.videoId);
-				  
+	  window.open("https://www.youtube.com/watch?list=UUnpSZboK4AIfI7RmV6O6vwQ&v=" + i.snippet.resourceId.videoId);
   });
   return item;
 };
@@ -84,19 +81,16 @@ function createPlaylistItem(i, index) {
 // Before doing any action with the API ->
 initAPIClient();
 
-
-
 function goUp(){
   if (videoVisible > 0){
     videoVisible--;
     document.getElementById(videoVisible.toString()).style.height = "90px";
   }
 }
-
 function goDown(){
     if (videoVisible < 50){
       document.getElementById(videoVisible.toString()).style.height = "0px";
      videoVisible++;    
   }  
 }
-
+// JavaScript Document
