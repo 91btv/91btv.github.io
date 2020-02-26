@@ -117,6 +117,10 @@ body {
     top: 0;
 	z-index: 1300
   }      
+.row {
+    padding-top: 10%;
+}
+
 
 }
 
@@ -316,6 +320,10 @@ aside {
     width: 90%;
     margin-left: 19px;
 }
+.row {
+    padding-top: 30%;
+}
+
 
 
 }
@@ -391,9 +399,7 @@ aside {
   flex-shrink: 0;
   transition: all 0.3s;
 }
-.row {
-    padding-top: 20%;
-}
+
 
 .center_arrow{
     width: 80%;
