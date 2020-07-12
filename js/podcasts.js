@@ -62,7 +62,7 @@ feednami.load(url)
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 0 11 12" width="13" height="13"><rect width="12" height="12" fill="none"></rect><path d="M1 .81v10.38a.76.76 0 0 0 .75.75.67.67 0 0 0 .39-.12l8.42-5.18a.75.75 0 0 0 0-1.28L2.14.18a.75.75 0 0 0-1 .24.79.79 0 0 0-.14.39z" fill="#282F36"></path></svg>
             </button>
           </a>
-          <a class="podcast-list-link" href="${revisedUrl}" target="iframe">
+          <a class="podcast-list-link" href="${revisedUrl + "embed"}" target="iframe">
             <div class="styles__episodeHeading___29q7v" style="overflow: hidden;">
               <div>
                 <div>
